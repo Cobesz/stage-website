@@ -21,6 +21,10 @@ import { OntwikkelenComponent } from './project/competenties/ontwikkelen/ontwikk
 import { OntwerpenComponent } from './project/competenties/ontwerpen/ontwerpen.component';
 import { OndernemenComponent } from './project/competenties/ondernemen/ondernemen.component';
 import { BetrokkenComponent } from './project/competenties/betrokken/betrokken.component';
+import { AutomatiserenComponent } from './project/competenties/ontwikkelen/automatiseren/automatiseren.component';
+import { ProjectstructuurComponent } from './project/competenties/ontwikkelen/projectstructuur/projectstructuur.component';
+import { AsynchroonComponent } from './project/competenties/ontwikkelen/asynchroon/asynchroon.component';
+import { GitlabComponent } from './project/competenties/ontwikkelen/gitlab/gitlab.component';
 
 @NgModule({
     declarations: [
@@ -36,7 +40,11 @@ import { BetrokkenComponent } from './project/competenties/betrokken/betrokken.c
         OntwikkelenComponent,
         OntwerpenComponent,
         OndernemenComponent,
-        BetrokkenComponent
+        BetrokkenComponent,
+        AutomatiserenComponent,
+        ProjectstructuurComponent,
+        AsynchroonComponent,
+        GitlabComponent
     ],
     imports: [
         BrowserModule,

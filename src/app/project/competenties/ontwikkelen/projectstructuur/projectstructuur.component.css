@@ -1,11 +1,11 @@
-
-img {
-    width: 300px;
-    display: inline-block;
-    margin: 40px 0;
-    border: 1px solid #66615B;
+.evidence-images {
+    width: 38em;
 }
 
-.readmore {
-    margin-top: 10px;
+
+.top-img {
+    width: 300px;
+    display: inline-block;
+    /*margin: 40px 0;*/
+    border: 1px solid #66615B;
 }

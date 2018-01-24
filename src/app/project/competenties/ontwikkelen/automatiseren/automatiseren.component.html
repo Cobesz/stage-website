@@ -1,0 +1,170 @@
+<div class="wrapper">
+    <div class="page-header page-header-xs" data-parallax="true"
+         style="background-image: url('../assets/img/fabio-mangione.jpg');">
+        <div class="filter"></div>
+    </div>
+    <div class="section profile-content">
+        <div class="container">
+            <div class="owner">
+                <div class="avatar">
+                    <img src="../assets/img/jenkins.png" alt="Circle Image"
+                         class="img-circle img-no-padding img-responsive">
+
+                </div>
+                <div class="name">
+                    <h4 class="title">Automatiseren Workflow<br/></h4>
+                    <h6 class="description">Situatie</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto text-center">
+                    <p>
+                        Tijdens mijn stage was ik werkzaam als DevOps engineer bij Bol & Boosch, het probleem was dat
+                        medewerkers van 8 of meer ondernemingen gebruik gaan maken van het te ontwikkelen platform,
+                        genaamd: “BBSDesk (Bol & Boosch Service Desk)”.
+                    </p>
+                </div>
+            </div>
+            <br/>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h6 class="description">Taak</h6>
+                            <p class="description">
+                                Mijn taak was het uitrollen van installaties voor nieuwe klanten en updates hiervan zo
+                                efficiënt mogelijk te maken. Dit houdt in dat het installeren van instanties en updaten
+                                niet meer handmatig te werk gaan. Oftewel het automatiseren van de workflow.
+                            </p>
+                            <br>
+                            <h6 class="description">Activiteiten</h6>
+                            <p class="description">
+                                Ik ben begonnen met het opzetten van een gitflow, dit is een standaard in het
+                                versiebeheer protocol genaamd “Git”. Hierdoor krijg je onderscheid in 3 verschillende
+                                takken van de ontwikkeling van een project, namelijk:
+                            </p>
+                            <br>
+                            <ul>
+                                <li>
+                                    Develop
+                                    <ul>
+                                        <li>
+                                            De ontwikkelomgeving, hierin worden bugs opgelost en nieuwe kenmerken,
+                                            ookwel
+                                            features genoemd, van het project ontwikkeld.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Release
+                                    <ul>
+                                        <li>
+                                            In deze omgeving mogen er geen nieuwe features meer toegevoegd worden. Met
+                                            deze versie wordt een project klaargestoomd voor een “release”. Ofwel de
+                                            uitgifte van een stabiele versie.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Master
+                                    <ul>
+                                        <li>
+                                            In deze omgeving staat de stabiele versie van het project, alle bugs zijn
+                                            eruit gehaald en alles is getest. Deze versie staat gelijk met wat er
+                                            geleverd is aan de opdrachtgever en/of klant. Dit is ook hetgeen wat live
+                                            staat.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <br>
+                            <p class="description">
+                                Na het opzetten was het aan mij de taak om deze ontwikkelomgevingen te koppelen met de
+                                webserver. Dit heb ik gedaan met behulp van een tool genaamd “Jenkins” . Jenkins heb ik
+                                zo ingesteld dat deze de wijzigingen in de verschillende takken kan herkennen en daarmee
+                                een actie kan uitvoeren. In dit specifieke geval moeten er testen gedraaid worden en,
+                                indien succesvol, op de webserver geplaatst worden. De webserver maakt deze omgevingen
+                                vervolgens via een url beschikbaar. In ons geval is dit als volgt:
+                            </p>
+                            <br>
+                            <ul>
+                                <li>
+                                    Develop
+                                    <ul>
+                                        <li>
+                                            http://bbsdesk.bolboosch.tech
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Release
+                                    <ul>
+                                        <li>
+                                            http://staging-bolboosch.bbsdesk.nl
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Master
+                                    <ul>
+                                        <li>
+                                            http://bolboosch.bbsdesk.nl
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <br>
+                            <p class="description">
+                                Jenkins is zo ingesteld dat als er op de master omgeving een wijziging binnenkomt als
+                                eerste bolboosch.bbsdesk.nl gebouwd gaat worden. Vervolgens geeft deze een signaal door,
+                                als de bouw volledig met groen licht gebouwd wordt, aan zijn onderliggende projecten die
+                                vervolgens ook gebouwd mogen worden op de desbetreffende urls. Deze projecten heten de
+                                “downstream”. Hieronder een voorbeeld van hoe dat eruit ziet.
+                            </p>
+                            <br>
+                            <img class="evidence-images" src="../assets/img/jenkins-pipeline.png"
+                                 alt="jenkins pipeline">
+                            <br>
+                            <h6 class="description">Resultaat</h6>
+                            <p class="description">
+                                Het bouwen van de installaties en het updaten was een succes, zoals in bovenstaande
+                                illustratie te zien is. Verscheidene installaties zijn van een update voorzien doordat
+                                er een wijziging is gevonden in de master omgeving. De omgeving is dusdanig gebouwd dat
+                                het makkelijk te lezen is, zelfs zonder kennis van Linux. Dit door het plaatsen van
+                                comments bij zowat elk command in het bash script.
+                            </p>
+                            <br>
+                            <img class="evidence-images" src="../assets/img/linux-bash.png"
+                                 alt="Linux Bash script">
+                            <small>(een gedeelte van het init script)</small>
+                            <br>
+                            <br>
+                            <p class="description">
+                                Om op de toekomst voorbereid te zijn heb ik de comments in het engels geplaatst, mochten
+                                er ooit buitenlandse developers bij Bol & Boosch komen werken.
+                            </p>
+                            <br>
+                            <h6 class="description">Reflectie</h6>
+                            <p class="description">
+                                Voorafgaand van het ontwikkelen ben ik begonnen met onderzoeken omtrent CI (Continuous
+                                Integration) en CD (Continuous Deployment). Hierdoor heb ik meer kijk gekregen op de
+                                materie en best practices. Ook kreeg ik door dat Jenkins de beste tool is voor deze
+                                situatie. Eerst dacht ik dat ik voor elke installatie een nieuwe git repository moest
+                                aanmaken, gaandeweg kwam ik tot de conclusie dat dit niet nodig was. Linux bash scripts
+                                en Jenkins waren voldoende om de installaties dynamisch te laten installeren.
+                            </p>
+                            <p class="description">
+                                Hierdoor ben ik van mening dat ik voldoende voorbereid was voordat ik met dit probleem
+                                aan de slag ging. Echter, zou ik later toch kiezen om minder bash scripts te gebruiken
+                                en meer door Jenkins zelf af te laten handelen.
+                            </p>
+                            <br>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a routerLink="/ontwikkelen" class="btn btn-danger btn-round" style="margin: 25px 44%;">Terug naar Competenties</a>
+        </div>
+    </div>
+</div>

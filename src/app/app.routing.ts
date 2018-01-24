@@ -15,12 +15,20 @@ import {OnderzoekenComponent} from './project/competenties/onderzoeken/onderzoek
 import {OntwerpenComponent} from './project/competenties/ontwerpen/ontwerpen.component';
 import {OndernemenComponent} from './project/competenties/ondernemen/ondernemen.component';
 import {BetrokkenComponent} from './project/competenties/betrokken/betrokken.component';
+import {AutomatiserenComponent} from './project/competenties/ontwikkelen/automatiseren/automatiseren.component';
+import {ProjectstructuurComponent} from './project/competenties/ontwikkelen/projectstructuur/projectstructuur.component';
+import {AsynchroonComponent} from './project/competenties/ontwikkelen/asynchroon/asynchroon.component';
+import {GitlabComponent} from './project/competenties/ontwikkelen/gitlab/gitlab.component';
 
 const routes: Routes = [
     { path: 'home',             component: LandingComponent },
     { path: 'bedrijf',          component: BedrijfComponent },
     { path: 'competenties',     component: CompetentiesComponent},
     { path: 'ontwikkelen',      component: OntwikkelenComponent},
+        { path: 'ontwikkelen/automatiseren-workflow',       component: AutomatiserenComponent},
+        { path: 'ontwikkelen/projectstructuur',             component: ProjectstructuurComponent},
+        { path: 'ontwikkelen/asynchroon-programmeren',      component: AsynchroonComponent},
+        { path: 'ontwikkelen/gitlab',                       component: GitlabComponent},
     { path: 'onderzoeken',      component: OnderzoekenComponent},
     { path: 'ontwerpen',        component: OntwerpenComponent},
     { path: 'ondernemen',       component: OndernemenComponent},
