@@ -7,14 +7,20 @@ import {AppRoutingModule} from './app.routing';
 
 import {AppComponent} from './app.component';
 import {SignupComponent} from './signup/signup.component';
-import {LandingComponent} from './landing/landing.component';
+import {LandingComponent} from './project/landing/landing.component';
 import {ProfileComponent} from './profile/profile.component';
 import {HomeComponent} from './home/home.component';
 import {NavbarComponent} from './shared/navbar/navbar.component';
 import {FooterComponent} from './shared/footer/footer.component';
 
 import {HomeModule} from './home/home.module';
-import {BedrijfComponent} from './bedrijf/bedrijf.component';
+import {BedrijfComponent} from './project/bedrijf/bedrijf.component';
+import { CompetentiesComponent } from './project/competenties/competenties.component';
+import { OnderzoekenComponent } from './project/competenties/onderzoeken/onderzoeken.component';
+import { OntwikkelenComponent } from './project/competenties/ontwikkelen/ontwikkelen.component';
+import { OntwerpenComponent } from './project/competenties/ontwerpen/ontwerpen.component';
+import { OndernemenComponent } from './project/competenties/ondernemen/ondernemen.component';
+import { BetrokkenComponent } from './project/competenties/betrokken/betrokken.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +30,13 @@ import {BedrijfComponent} from './bedrijf/bedrijf.component';
         ProfileComponent,
         NavbarComponent,
         FooterComponent,
-        BedrijfComponent
+        BedrijfComponent,
+        CompetentiesComponent,
+        OnderzoekenComponent,
+        OntwikkelenComponent,
+        OntwerpenComponent,
+        OndernemenComponent,
+        BetrokkenComponent
     ],
     imports: [
         BrowserModule,
