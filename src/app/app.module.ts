@@ -25,7 +25,8 @@ import { AutomatiserenComponent } from './project/competenties/ontwikkelen/autom
 import { ProjectstructuurComponent } from './project/competenties/ontwikkelen/projectstructuur/projectstructuur.component';
 import { AsynchroonComponent } from './project/competenties/ontwikkelen/asynchroon/asynchroon.component';
 import { GitlabComponent } from './project/competenties/ontwikkelen/gitlab/gitlab.component';
-import {HashLocationStrategy, LocationStrategy} from "@angular/common";
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { ContinuousIntegrationComponent } from './project/competenties/onderzoeken/continuous-integration/continuous-integration.component';
 
 @NgModule({
     declarations: [
@@ -45,7 +46,8 @@ import {HashLocationStrategy, LocationStrategy} from "@angular/common";
         AutomatiserenComponent,
         ProjectstructuurComponent,
         AsynchroonComponent,
-        GitlabComponent
+        GitlabComponent,
+        ContinuousIntegrationComponent
     ],
     imports: [
         BrowserModule,

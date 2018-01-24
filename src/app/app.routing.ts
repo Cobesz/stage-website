@@ -19,6 +19,7 @@ import {AutomatiserenComponent} from './project/competenties/ontwikkelen/automat
 import {ProjectstructuurComponent} from './project/competenties/ontwikkelen/projectstructuur/projectstructuur.component';
 import {AsynchroonComponent} from './project/competenties/ontwikkelen/asynchroon/asynchroon.component';
 import {GitlabComponent} from './project/competenties/ontwikkelen/gitlab/gitlab.component';
+import {ContinuousIntegrationComponent} from './project/competenties/onderzoeken/continuous-integration/continuous-integration.component';
 
 const routes: Routes = [
     { path: 'home',             component: LandingComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
         { path: 'ontwikkelen/asynchroon-programmeren',      component: AsynchroonComponent},
         { path: 'ontwikkelen/gitlab',                       component: GitlabComponent},
     { path: 'onderzoeken',      component: OnderzoekenComponent},
+        { path: 'onderzoeken/continuous-integration',       component: ContinuousIntegrationComponent},
     { path: 'ontwerpen',        component: OntwerpenComponent},
     { path: 'ondernemen',       component: OndernemenComponent},
     { path: 'betrokken',        component: BetrokkenComponent},
