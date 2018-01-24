@@ -4,7 +4,8 @@
 }
 
 #backButton {
-    margin-bottom: 500px;
+    float: left;
+    margin:40px 0 500px;
     z-index: 1;
 }
 
