@@ -25,6 +25,7 @@ import { AutomatiserenComponent } from './project/competenties/ontwikkelen/autom
 import { ProjectstructuurComponent } from './project/competenties/ontwikkelen/projectstructuur/projectstructuur.component';
 import { AsynchroonComponent } from './project/competenties/ontwikkelen/asynchroon/asynchroon.component';
 import { GitlabComponent } from './project/competenties/ontwikkelen/gitlab/gitlab.component';
+import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 
 @NgModule({
     declarations: [
@@ -54,7 +55,7 @@ import { GitlabComponent } from './project/competenties/ontwikkelen/gitlab/gitla
         AppRoutingModule,
         HomeModule
     ],
-    providers: [],
+    providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
     bootstrap: [AppComponent]
 })
 export class AppModule {
