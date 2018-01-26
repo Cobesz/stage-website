@@ -18,7 +18,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6 ml-auto mr-auto text-center">
-                    <p>
+                    <p class="description">
                         Tijdens mijn stage was ik werkzaam als DevOps engineer bij Bol & Boosch, het probleem was dat
                         medewerkers van 8 of meer ondernemingen gebruik gaan maken van het te ontwikkelen platform,
                         genaamd: “BBSDesk (Bol & Boosch Service Desk)”.
@@ -32,14 +32,14 @@
                     <ul class="list-unstyled">
                         <li>
                             <h6 class="description">Taak</h6>
-                            <p class="description">
+                            <p>
                                 Mijn taak was het uitrollen van installaties voor nieuwe klanten en updates hiervan zo
                                 efficiënt mogelijk te maken. Dit houdt in dat het installeren van instanties en updaten
                                 niet meer handmatig te werk gaan. Oftewel het automatiseren van de workflow.
                             </p>
                             <br>
                             <h6 class="description">Activiteiten</h6>
-                            <p class="description">
+                            <p>
                                 Ik ben begonnen met het opzetten van een gitflow, dit is een standaard in het
                                 versiebeheer protocol genaamd “Git”. Hierdoor krijg je onderscheid in 3 verschillende
                                 takken van de ontwikkeling van een project, namelijk:
@@ -79,7 +79,7 @@
                                 </li>
                             </ul>
                             <br>
-                            <p class="description">
+                            <p>
                                 Na het opzetten was het aan mij de taak om deze ontwikkelomgevingen te koppelen met de
                                 webserver. Dit heb ik gedaan met behulp van een tool genaamd “Jenkins” . Jenkins heb ik
                                 zo ingesteld dat deze de wijzigingen in de verschillende takken kan herkennen en daarmee
@@ -115,7 +115,7 @@
                                 </li>
                             </ul>
                             <br>
-                            <p class="description">
+                            <p>
                                 Jenkins is zo ingesteld dat als er op de master omgeving een wijziging binnenkomt als
                                 eerste bolboosch.bbsdesk.nl gebouwd gaat worden. Vervolgens geeft deze een signaal door,
                                 als de bouw volledig met groen licht gebouwd wordt, aan zijn onderliggende projecten die
@@ -126,8 +126,9 @@
                             <img class="evidence-images" src="../assets/img/jenkins-pipeline.png"
                                  alt="jenkins pipeline">
                             <br>
+                            <br>
                             <h6 class="description">Resultaat</h6>
-                            <p class="description">
+                            <p>
                                 Het bouwen van de installaties en het updaten was een succes, zoals in bovenstaande
                                 illustratie te zien is. Verscheidene installaties zijn van een update voorzien doordat
                                 er een wijziging is gevonden in de master omgeving. De omgeving is dusdanig gebouwd dat
@@ -135,18 +136,24 @@
                                 comments bij zowat elk command in het bash script.
                             </p>
                             <br>
+                            <p>
+                                Ook heb ik een
+                                <a href="../assets/img//pdfs/Uploaden nieuwe websites.pdf" target="_blank">handleiding</a>
+                                handleiding geschreven voor het plaatsen van nieuwe projecten.
+                            </p>
+                            <br>
                             <img class="evidence-images" src="../assets/img/linux-bash.png"
                                  alt="Linux Bash script">
                             <small>(een gedeelte van het init script)</small>
                             <br>
                             <br>
-                            <p class="description">
+                            <p>
                                 Om op de toekomst voorbereid te zijn heb ik de comments in het engels geplaatst, mochten
                                 er ooit buitenlandse developers bij Bol & Boosch komen werken.
                             </p>
                             <br>
                             <h6 class="description">Reflectie</h6>
-                            <p class="description">
+                            <p>
                                 Voorafgaand van het ontwikkelen ben ik begonnen met onderzoeken omtrent CI (Continuous
                                 Integration) en CD (Continuous Deployment). Hierdoor heb ik meer kijk gekregen op de
                                 materie en best practices. Ook kreeg ik door dat Jenkins de beste tool is voor deze
@@ -154,7 +161,7 @@
                                 aanmaken, gaandeweg kwam ik tot de conclusie dat dit niet nodig was. Linux bash scripts
                                 en Jenkins waren voldoende om de installaties dynamisch te laten installeren.
                             </p>
-                            <p class="description">
+                            <p>
                                 Hierdoor ben ik van mening dat ik voldoende voorbereid was voordat ik met dit probleem
                                 aan de slag ging. Echter, zou ik later toch kiezen om minder bash scripts te gebruiken
                                 en meer door Jenkins zelf af te laten handelen.
@@ -164,7 +171,8 @@
                     </ul>
                 </div>
             </div>
-            <a routerLink="/ontwikkelen" class="btn btn-danger btn-round" style="margin: 25px 44%;">Terug naar Competenties</a>
+            <a routerLink="/ontwikkelen" class="btn btn-danger btn-round" style="margin: 25px 44%;">Terug naar
+                Competenties</a>
         </div>
     </div>
 </div>

@@ -20,6 +20,7 @@ import {ProjectstructuurComponent} from './project/competenties/ontwikkelen/proj
 import {AsynchroonComponent} from './project/competenties/ontwikkelen/asynchroon/asynchroon.component';
 import {GitlabComponent} from './project/competenties/ontwikkelen/gitlab/gitlab.component';
 import {ContinuousIntegrationComponent} from './project/competenties/onderzoeken/continuous-integration/continuous-integration.component';
+import {TrajectCiComponent} from "./project/competenties/betrokken/traject-ci/traject-ci.component";
 
 const routes: Routes = [
     { path: 'home',             component: LandingComponent },
@@ -33,8 +34,10 @@ const routes: Routes = [
     { path: 'onderzoeken',      component: OnderzoekenComponent},
         { path: 'onderzoeken/continuous-integration',       component: ContinuousIntegrationComponent},
     { path: 'ontwerpen',        component: OntwerpenComponent},
+        { path: 'ontwerpen/automatiseren-workflow',        component: AutomatiserenComponent},
     { path: 'ondernemen',       component: OndernemenComponent},
     { path: 'betrokken',        component: BetrokkenComponent},
+        { path: 'betrokken/traject-ci',        component: TrajectCiComponent},
     { path: 'voorbeeld',        component: HomeComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: '', redirectTo: 'home', pathMatch: 'full' }

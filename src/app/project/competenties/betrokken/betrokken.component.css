@@ -1,0 +1,11 @@
+
+img {
+    width: 300px;
+    display: inline-block;
+    margin: 40px 0;
+    border: 1px solid #66615B;
+}
+
+.readmore {
+    margin-top: 10px;
+}

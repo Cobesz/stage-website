@@ -27,6 +27,7 @@ import { AsynchroonComponent } from './project/competenties/ontwikkelen/asynchro
 import { GitlabComponent } from './project/competenties/ontwikkelen/gitlab/gitlab.component';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { ContinuousIntegrationComponent } from './project/competenties/onderzoeken/continuous-integration/continuous-integration.component';
+import { TrajectCiComponent } from './project/competenties/betrokken/traject-ci/traject-ci.component';
 
 @NgModule({
     declarations: [
@@ -47,7 +48,8 @@ import { ContinuousIntegrationComponent } from './project/competenties/onderzoek
         ProjectstructuurComponent,
         AsynchroonComponent,
         GitlabComponent,
-        ContinuousIntegrationComponent
+        ContinuousIntegrationComponent,
+        TrajectCiComponent
     ],
     imports: [
         BrowserModule,

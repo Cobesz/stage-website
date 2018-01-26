@@ -1,11 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-continuous-integration',
-    templateUrl: './continuous-integration.component.html',
-    styleUrls: ['./continuous-integration.component.css']
+  selector: 'app-traject-ci',
+  templateUrl: './traject-ci.component.html',
+  styleUrls: ['./traject-ci.component.css']
 })
-export class ContinuousIntegrationComponent implements OnInit {
+export class TrajectCiComponent implements OnInit {
 
     image;
     modal;
