@@ -21,6 +21,7 @@ import {AsynchroonComponent} from './project/competenties/ontwikkelen/asynchroon
 import {GitlabComponent} from './project/competenties/ontwikkelen/gitlab/gitlab.component';
 import {ContinuousIntegrationComponent} from './project/competenties/onderzoeken/continuous-integration/continuous-integration.component';
 import {TrajectCiComponent} from "./project/competenties/betrokken/traject-ci/traject-ci.component";
+import {IteratiesBbsdeskComponent} from "./project/competenties/ontwerpen/iteraties-bbsdesk/iteraties-bbsdesk.component";
 
 const routes: Routes = [
     { path: 'home',             component: LandingComponent },
@@ -35,7 +36,9 @@ const routes: Routes = [
         { path: 'onderzoeken/continuous-integration',       component: ContinuousIntegrationComponent},
     { path: 'ontwerpen',        component: OntwerpenComponent},
         { path: 'ontwerpen/automatiseren-workflow',        component: AutomatiserenComponent},
+        { path: 'ontwerpen/iteraties-bbsdesk',        component: IteratiesBbsdeskComponent},
     { path: 'ondernemen',       component: OndernemenComponent},
+        { path: 'ondernemen/traject-ci',        component: TrajectCiComponent},
     { path: 'betrokken',        component: BetrokkenComponent},
         { path: 'betrokken/traject-ci',        component: TrajectCiComponent},
     { path: 'voorbeeld',        component: HomeComponent },
