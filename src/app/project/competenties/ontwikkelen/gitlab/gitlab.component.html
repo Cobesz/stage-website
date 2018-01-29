@@ -18,10 +18,10 @@
             </div>
             <div class="row">
                 <div class="col-md-6 ml-auto mr-auto text-center">
-                    <p>
+                    <p class="description">
                         De versiebeheer provider van Bol & Boosch is Gitlab. Tijdens mijn stage is er regelmatig
                         geklaagd omtrent de snelheid en downtime van de diensten van dit bedrijf. Het kwam regelmatig
-                        voor dat bepaalde vernieuwingen aan het BBSdesk project en zorgeloosch website niet doorgezet
+                        voor dat bepaalde vernieuwingen aan het BBSdesk project en de Zorgeloosch website niet doorgezet
                         werden en later opnieuw gedaan moesten worden door deze problemen.
                     </p>
                 </div>
@@ -33,23 +33,23 @@
                     <ul class="list-unstyled">
                         <li>
                             <h6 class="description">Taak</h6>
-                            <p class="description">
+                            <p>
                                 Mijn taak was om deze situatie te verbeteren. De werking van versiebeheer moest
                                 hetzelfde blijven, maar de snelheid en de zogeheten uptime een stuk betrouwbaarder.
                             </p>
                             <br>
                             <h6 class="description">Activiteiten</h6>
-                            <p class="description">
-                                Ik ben gaan onderzoeken of er andere bedrijven waren die de dezelfde diensten aan konden
+                            <p>
+                                Ik ben gaan onderzoeken of er andere bedrijven waren die dezelfde diensten aan konden
                                 bieden, maar die wel de wensen van de opdrachtgever kunnen verwezenlijken. Echter kwam
                                 ik al snel tot de conclusie dat je het probleem van uptime en updates niet in eigen hand
-                                hebt als je dit soort zaken uitbesteedt. Toen ben ik na overleg over dit euvel
+                                hebt wanneer je dit soort zaken uitbesteedt. Toen ben ik na overleg over dit euvel
                                 overgegaan tot het ontwikkelen van een eigen git server.
                             </p>
                             <br>
-                            <p class="description">
-                                Omdat Bol & Boosch momenteel al met Gitlab werkte heb ik gekozen voor “GitLab Community
-                                Edition (CE)”. Dit is een open-source project wat geïnstalleerd kan worden op de eigen
+                            <p>
+                                Omdat Bol & Boosch al met Gitlab werkte, heb ik gekozen voor “GitLab Community Edition
+                                (CE)”. Dit is een open-source project wat geïnstalleerd kan worden op de eigen
                                 webserver. Dit is precies wat ik vervolgens gedaan heb. Deze installatie is, uiteraard
                                 met ssl-certificaat, te bereiken op: <a href="https://gitlab.bolboosch.tech/"
                                                                         target="_blank">gitlab.bolboosch.tech/</a>.
@@ -57,37 +57,44 @@
                                 uitvoerig testen, begonnen met het overzetten van alle repositories van <a
                                     href="https://www.gitlab.com" target="_blank">gitlab.com</a>
                                 naar <a href="https://gitlab.bolboosch.tech/" target="_blank">gitlab.bolboosch.tech/</a>.
+
                             </p>
                             <br>
                             <h6 class="description">Resultaat</h6>
-                            <p class="description">
+                            <p>
                                 Dit resulteerde in een snellere en betrouwbaardere oplossing voor versiebeheer. Dit
                                 omdat Bol & Boosch nu zelf in handen heeft wanneer updates van het platform doorgevoerd
                                 worden en de verbinding hiermee vanaf de eigen webserver afkomstig is.
                             </p>
                             <br>
-                            <p class="description">
-                                De snelheid is aanzienlijk verbeterd omdat we met een interne server werken. De tijden
-                                waarin een verandering aan de CI <a routerLink="/ontwikkelen/automatiseren-workflow">(Continuous Integration)</a> doorkwamen zijn van 20+ seconde naar 2
-                                seconde gegaan.
+                            <p>
+                                De snelheid is aanzienlijk verbeterd, omdat we met een interne server werken. De tijden
+                                waarin een verandering aan de CI<a routerLink="/ontwikkelen/automatiseren-workflow">(Continuous
+                                Integration)</a> doorkwamen zijn van 20+ seconden naar 2
+                                seconden gegaan.
                             </p>
                             <br>
-                            <p class="description">
-                                De betrouwbaarheid en stabiliteit is ook significant vergroot. Voorheen konden wanneer
-                                GitLab offline was problemen in de productie ontstaan waardoor veelal niet alles kapot
-                                gaat. Door het gebruiken van een eigen server is dit probleem opgelost, evenals de
-                                downtime wanneer GitLab updates worden uitgevoerd.
+                            <p>
+                                De betrouwbaarheid en stabiliteit is ook significant vergroot. Voorheen konden, wanneer
+                                GitLab offline was, problemen in de productie ontstaan waardoor veelal niet alles kapot
+                                gaat. (gaat alles kapot of niet alles kapot?) Door het gebruiken van een eigen server is
+                                dit probleem opgelost, evenals de downtime wanneer GitLab updates worden uitgevoerd.
                             </p>
-                            <img class="evidence-images" src="../assets/img/gitlab2.png"
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/gitlab2.png"
                                  alt="jenkins pipeline">
                             <br>
                             <br>
                             <h6 class="description">Reflectie</h6>
-                            <p class="description">
-                                Dit punt was best moeilijk voor mij om door te krijgen, achteraf gezien zou ik sneller
-                                naar goede uitleg gezocht hebben in plaats van zelf aan de slag gaan zonder enig idee
-                                van hoe het werkt. Ik ben wel van mening dat ik nu beter snap hoe het niet werkt en
-                                vooral daarom de achterliggende gedachte goed snap.
+                            <p>
+                                Ik ben best trots op deze aanpak. Ook heb ik bewezen dat mijn kennis op het gebied van
+                                workflows, git en linux gegroeid is. Het opzetten ging vrijwel zonder problemen en ook
+                                https verbindingen(ssl-certificaten) aanleggen lukt mij tegenwoordig zeer goed.
+                            </p>
+                            <br>
+                            <p>
+                                Ook de keuze om zelf versiebeheer in handen te nemen is mij goed bevallen. Hiermee
+                                bewijs ik dat ik zelf het initiatief in handen kan nemen.
                             </p>
                         </li>
                     </ul>
@@ -95,6 +102,18 @@
             </div>
             <a routerLink="/ontwikkelen" class="btn btn-danger btn-round" style="margin: 25px 44%;">Terug naar
                 Competenties</a>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal" style="z-index: 1">
+
+            <!-- The Close Button -->
+            <span (click)="closeModal()" class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
         </div>
     </div>
 </div>

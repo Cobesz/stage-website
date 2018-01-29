@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-gitlab',
-  templateUrl: './gitlab.component.html',
-  styleUrls: ['./gitlab.component.css']
+    selector: 'app-inrichting-webserver',
+    templateUrl: './inrichting-webserver.component.html',
+    styleUrls: ['./inrichting-webserver.component.css']
 })
-export class GitlabComponent implements OnInit {
+export class InrichtingWebserverComponent implements OnInit {
     image;
     modal;
     modalImg;

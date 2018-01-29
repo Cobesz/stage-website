@@ -29,6 +29,7 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { ContinuousIntegrationComponent } from './project/competenties/onderzoeken/continuous-integration/continuous-integration.component';
 import { TrajectCiComponent } from './project/competenties/betrokken/traject-ci/traject-ci.component';
 import { IteratiesBbsdeskComponent } from './project/competenties/ontwerpen/iteraties-bbsdesk/iteraties-bbsdesk.component';
+import { InrichtingWebserverComponent } from './project/competenties/ondernemen/inrichting-webserver/inrichting-webserver.component';
 
 @NgModule({
     declarations: [
@@ -51,7 +52,8 @@ import { IteratiesBbsdeskComponent } from './project/competenties/ontwerpen/iter
         GitlabComponent,
         ContinuousIntegrationComponent,
         TrajectCiComponent,
-        IteratiesBbsdeskComponent
+        IteratiesBbsdeskComponent,
+        InrichtingWebserverComponent
     ],
     imports: [
         BrowserModule,

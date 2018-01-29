@@ -19,8 +19,8 @@
                 <div class="col-md-6 ml-auto mr-auto text-center">
                     <p>
                         Het nieuw te starten project “BBSdesk” gaat een software platform worden waarin verschillende
-                        apps terecht gaan komen. Denk aan: Kennisbank, Nieuws, callcentre crm, rooster etc.
-                        Al deze modules moeten onafhankelijk van elkaar kunnen opereren.
+                        apps terecht gaan komen. Denk aan: Kennisbank, Nieuws, callcentre crm, rooster etc. Al deze
+                        modules moeten onafhankelijk van elkaar kunnen opereren.
                     </p>
                 </div>
             </div>
@@ -31,73 +31,77 @@
                     <ul class="list-unstyled">
                         <li>
                             <h6 class="description">Taak</h6>
-                            <p class="description">
-                                Aan mij de taak om de structuur van het project op te zetten en te bepalen hoe de code
-                                ingezet wordt aan de voorkant van het project. Dit betreft een front-end in angular 4.
-                                Aan mij om een flexibele en duidelijk te begrijpen projectstructuur op te zetten.
-                                Uiteraard is het ook de bedoeling dat deze structuur ook na mijn stage nog gebruikt moet
-                                worden.
+                            <p>
+                                Aan mij was de taak om de structuur van het project op te zetten en te bepalen hoe de
+                                code ingezet wordt aan de voorkant van het project. Dit betreft een front-end in angular
+                                4. Tevens was het aan mij om een flexibele en duidelijk te begrijpen projectstructuur op
+                                te zetten. Uiteraard is het ook de bedoeling dat deze structuur na mijn stage nog
+                                gebruikt moet worden.
                             </p>
                             <br>
                             <h6 class="description">Activiteiten</h6>
-                            <p class="description">
-                                Ik ben begonnen met het opdelen van de op dat moment bekende modules waar aan gewerkt
-                                ging worden. Dit betrof de Kennisbank- en Nieuwsmodule. Ook heb ik een gedeelde Module
+                            <p>
+                                Ik ben begonnen met het opdelen van de op dat moment bekende modules waaraan gewerkt
+                                ging worden. Dit betrof de Kennisbank- en Nieuwsmodule. Ook heb ik een gedeelde module
                                 gemaakt onder de noemer “SharedModule”. Deze module bevat globale functies, styling en
                                 elementen die in het hele project nodig zijn. Denk bijvoorbeeld aan een footer of een
                                 header. In de root van het project staan de configuraties van het project. Hieronder is
-                                te
-                                zien hoe de eerste laag is opgesteld.
+                                te zien hoe de eerste laag is opgesteld.
                             </p>
                             <br>
-                            <img class="evidence-images" src="../assets/img/projectstructuur1.png"
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/projectstructuur1.png"
                                  alt="jenkins pipeline">
                             <br>
                             <br>
-                            <p class="description">
-                                Vervolgens heb ik de modules opgedeeld in services en componenten, dit met als doeleinde
-                                om de code overzichtelijk en duidelijk te houden. De componenten bevatten stuk voor stuk
-                                een html (element opbouw), scss(styling) en typescript (logica) bestand.Een voorbeeld
-                                van een component is faqComponent, het doel van dit component is om de detailweergave
-                                van een veelgestelde vraag te laten zien aan de eindgebruiker.
+                            <p>
+                                Vervolgens heb ik de modules opgedeeld in services en componenten, met als doeleinde om
+                                de code overzichtelijk en duidelijk te houden. De componenten bevatten stuk voor stuk
+                                een html (element opbouw), scss(styling) en typescript (logica) bestand. Een voorbeeld
+                                van een component is faqComponent Het doel van dit component is om de detailweergave van
+                                een veelgestelde vraag te laten zien aan de eindgebruiker.
                             </p>
                             <br>
-                            <img class="evidence-images" src="../assets/img/projectstructuur2.png"
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/projectstructuur2.png"
                                  alt="jenkins pipeline">
                             <br>
                             <br>
-                            <img class="evidence-images" src="../assets/img/projectstructuur3.png"
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/projectstructuur3.png"
                                  alt="jenkins pipeline">
                             <small>Zo ziet het component er visueel uit.</small>
                             <br>
                             <br>
                             <h6 class="description">Resultaat</h6>
-                            <p class="description">
-                                Deze structuur heeft er voor gezorgd dat we als team meer duidelijkheid hebben over het
+                            <p>
+                                Deze structuur heeft ervoor gezorgd dat we als team meer duidelijkheid hebben over het
                                 te bouwen project. Ook zorgt het voor de modulaire opbouw waar Bol & Boosch naar zocht,
                                 zodat de flexibiliteit van het product gewaarborgd kan worden.
                             </p>
                             <br>
                             <br>
                             <h6 class="description">Reflectie</h6>
-                            <p class="description">
+                            <p>
                                 De eerdere iteraties waren minder modulair opgebouwd en wat rommeliger. Dit is de
                                 feedback die ik heb ontvangen van de stakeholders binnen het project. Om een voorbeeld
                                 te geven van eerdere iteraties:
                             </p>
-                            <img class="evidence-images" src="../assets/img/projectstructuur4.png"
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/projectstructuur4.png"
                                  alt="Linux Bash script">
                             <small>(de eerste variant)</small>
                             <br>
                             <br>
-                            <p class="description">
+                            <p>
                                 Achteraf gezien zou ik eerder begonnen zijn met het bepalen van de wensen van de mensen
                                 die dit in gebruik gaan nemen. Al met al kan ik zeggen dat het doel van deze taak, een
                                 flexibele en duidelijk te begrijpen projectstructuur op te zetten, is behaald en hiermee
                                 een probleem, alle modules moeten onafhankelijk van elkaar kunnen opereren, getackeld
-                                is.
+                                is. Het is een structuur geworden die tot de dag van vandaag nog steeds gebruikt wordt
+                                met weinig tot geen klachten.
                             </p>
-                            <p class="description">
+                            <p>
                                 Het is een structuur geworden die tot de dag van vandaag nog steeds gebruikt wordt
                                 met weinig tot geen klachten.
                             </p>
@@ -106,7 +110,20 @@
                     </ul>
                 </div>
             </div>
-            <a routerLink="/ontwikkelen" class="btn btn-danger btn-round" style="margin: 25px 44%;">Terug naar Competenties</a>
+            <a routerLink="/ontwikkelen" class="btn btn-danger btn-round" style="margin: 25px 44%;">Terug naar
+                Competenties</a>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal" style="z-index: 1">
+
+            <!-- The Close Button -->
+            <span (click)="closeModal()" class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
         </div>
     </div>
 </div>

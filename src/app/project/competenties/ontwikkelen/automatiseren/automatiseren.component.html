@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-md-6 ml-auto mr-auto text-center">
                     <p class="description">
-                        Tijdens mijn stage was ik werkzaam als DevOps engineer bij Bol & Boosch, het probleem was dat
+                        Tijdens mijn stage was ik werkzaam als DevOps engineer bij Bol & Boosch.Het probleem is dat
                         medewerkers van 8 of meer ondernemingen gebruik gaan maken van het te ontwikkelen platform,
                         genaamd: “BBSDesk (Bol & Boosch Service Desk)”.
                     </p>
@@ -50,9 +50,8 @@
                                     Develop
                                     <ul>
                                         <li>
-                                            De ontwikkelomgeving, hierin worden bugs opgelost en nieuwe kenmerken,
-                                            ookwel
-                                            features genoemd, van het project ontwikkeld.
+                                            de ontwikkelomgeving, hierin worden bugs opgelost en nieuwe kenmerken,
+                                            ookwel features genoemd, van het project ontwikkeld.
                                         </li>
                                     </ul>
                                 </li>
@@ -61,7 +60,7 @@
                                     <ul>
                                         <li>
                                             In deze omgeving mogen er geen nieuwe features meer toegevoegd worden. Met
-                                            deze versie wordt een project klaargestoomd voor een “release”. Ofwel de
+                                            deze versie wordt een project klaargestoomd voor een “release”, ofwel de
                                             uitgifte van een stabiele versie.
                                         </li>
                                     </ul>
@@ -71,7 +70,7 @@
                                     <ul>
                                         <li>
                                             In deze omgeving staat de stabiele versie van het project, alle bugs zijn
-                                            eruit gehaald en alles is getest. Deze versie staat gelijk met wat er
+                                            eruit gehaald en alles is getest. Deze versie staat gelijk aan wat er
                                             geleverd is aan de opdrachtgever en/of klant. Dit is ook hetgeen wat live
                                             staat.
                                         </li>
@@ -123,26 +122,29 @@
                                 “downstream”. Hieronder een voorbeeld van hoe dat eruit ziet.
                             </p>
                             <br>
-                            <img class="evidence-images" src="../assets/img/jenkins-pipeline.png"
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/jenkins-pipeline.png"
                                  alt="jenkins pipeline">
                             <br>
                             <br>
                             <h6 class="description">Resultaat</h6>
                             <p>
                                 Het bouwen van de installaties en het updaten was een succes, zoals in bovenstaande
-                                illustratie te zien is. Verscheidene installaties zijn van een update voorzien doordat
+                                illustratie te zien is. Verscheidene installaties zijn van een update voorzien, doordat
                                 er een wijziging is gevonden in de master omgeving. De omgeving is dusdanig gebouwd dat
-                                het makkelijk te lezen is, zelfs zonder kennis van Linux. Dit door het plaatsen van
-                                comments bij zowat elk command in het bash script.
+                                het makkelijk te lezen is, zelfs zonder kennis van Linux, door het plaatsen van comments
+                                bij zowat elke command in het bash script.
                             </p>
                             <br>
                             <p>
                                 Ook heb ik een
-                                <a href="../assets/img//pdfs/Uploaden nieuwe websites.pdf" target="_blank">handleiding</a>
+                                <a href="../assets/img//pdfs/Uploaden nieuwe websites.pdf"
+                                   target="_blank">handleiding</a>
                                 handleiding geschreven voor het plaatsen van nieuwe projecten.
                             </p>
                             <br>
-                            <img class="evidence-images" src="../assets/img/linux-bash.png"
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/linux-bash.png"
                                  alt="Linux Bash script">
                             <small>(een gedeelte van het init script)</small>
                             <br>
@@ -162,7 +164,7 @@
                                 en Jenkins waren voldoende om de installaties dynamisch te laten installeren.
                             </p>
                             <p>
-                                Hierdoor ben ik van mening dat ik voldoende voorbereid was voordat ik met dit probleem
+                                Hierdoor was ik van mening dat ik voldoende voorbereid was, voordat ik met dit probleem
                                 aan de slag ging. Echter, zou ik later toch kiezen om minder bash scripts te gebruiken
                                 en meer door Jenkins zelf af te laten handelen.
                             </p>
@@ -173,6 +175,18 @@
             </div>
             <a routerLink="/ontwikkelen" class="btn btn-danger btn-round" style="margin: 25px 44%;">Terug naar
                 Competenties</a>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal" style="z-index: 1">
+
+            <!-- The Close Button -->
+            <span (click)="closeModal()" class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
         </div>
     </div>
 </div>
