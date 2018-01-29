@@ -1,0 +1,265 @@
+<div class="wrapper">
+    <div class="page-header page-header-xs" data-parallax="true"
+         style="background-image: url('../assets/img/fabio-mangione.jpg');">
+        <div class="filter"></div>
+    </div>
+    <div class="section profile-content">
+        <div class="container">
+            <div class="owner">
+                <div class="avatar">
+                    <img src="../assets/img/ontwerptraject.png" alt="Traject"
+                         class="img-circle img-no-padding img-responsive top-img">
+                </div>
+                <div class="name">
+                    <h4 class="title">Traject opzetten geautomatiseerde deployment<br/></h4>
+                    <h6 class="description">Inleiding</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto text-center">
+                    <p class="description">
+                        Tijdens mijn stage bij Bol & Boosch was een van mijn opdrachten het opzetten van een
+                        geautomatiseerd deployment systeem voor de BBSdesk. Dit heb ik stap voor stap aangepakt. Het
+                        begon met uitzoeken wat het bedrijf nu echt wilde en ging hiervoor in gesprek met de
+                        stakeholders van dit project.
+                    </p>
+                    <br>
+                    <p class="description">
+                        Deze stakeholders zijn zowel de developers als de sales afdeling van Bol & Boosch, maar ook de
+                        klanten die het product van Bol & Boosch afnemen. Als afgevaardigde van de sales afdeling heb ik
+                        gesproken met Mike el Kiki.
+                    </p>
+                </div>
+            </div>
+            <br/>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h6 class="description">Commercieel Directeur</h6>
+                            <p>
+                                Mike is commercieel directeur van Bol & Boosch. Hij kon mij vertellen dat het bedrijf
+                                actief begonnen is met acquisitie om het product aan de man te brengen bij verscheidene
+                                bedrijven.
+                            </p>
+                            <br>
+                            <p>
+                                Sterker nog, er zijn al een aantal bedrijven die geïnteresseerd zijn in het product en
+                                mee willen doen aan een pilotfase. Deze bedrijven zijn:
+                            </p>
+                            <ul>
+                                <li>Livechat Service</li>
+                                <li>Slim Media</li>
+                                <li>Mobilaris B.V.</li>
+                                <li>ING</li>
+                                <li>Zorgeloosch</li>
+                                <li>2Divorce</li>
+                                <li>Tritel</li>
+                                <li>Vinod.nu</li>
+                                <li>Bol & Boosch Call Center</li>
+                                <li>Erasmus Centre for Entrepreneurship</li>
+                            </ul>
+                            <br>
+                            <h6 class="description">Belangrijke punten</h6>
+                            <p>
+                                Voor Mike waren in zijn positie een aantal punten belangrijk:
+                            </p>
+                            <ul>
+                                <li>Klanten kunnen beloven dat zij over hun eigen data kunnen beschikken.</li>
+                                <li>Per klant een eigen omgeving waarin zij kunnen werken.</li>
+                                <li>De verbinding moet beveiligd zijn.</li>
+                                <li>Nieuwe klanten moeten met een druk op de knop hun eigen omgeving krijgen.</li>
+                            </ul>
+                            <br>
+                            <p>
+                                Deze bovenstaande punten, vooral het stukje veiligheid en eigen data, waren ook voor de
+                                klanten belangrijk. Om dit te achterhalen heb ik een meeting gehad met de Danny de
+                                Keijzer, call manager van Bol & Boosch, en Walid Sadek van Livechat Service.
+                            </p>
+                            <br>
+                            <p>
+                                De andere stakeholders zijn de developers. Dit zijn ook de mensen waar ik dagelijks mee
+                                heb gewerkt en heb de punten die het meest terug kwamen opgesomd:
+                            </p>
+                            <ul>
+                                <li>Testen kost veel tijd.</li>
+                                <li>
+                                    Het onderhouden van de instanties van alle klanten klinkt als een lastige job.
+                                    <ul>
+                                        <li>Het idee dat er per klant een eigen omgeving gebouwd moet worden.</li>
+                                    </ul>
+
+                                </li>
+                                <li>Het live zetten neemt allerlei complicaties met zich mee.</li>
+                            </ul>
+                            <br>
+                            <p>
+                                Vervolgens ben ik begonnen met een <a routerLink="/onderzoeken/continuous-integration">onderzoek</a>
+                                naar het verbeteren van de workflow. Het
+                                doel hiervan is dat developers geholpen worden met het testen en deployen van hun
+                                applicaties en/of websites.
+                            </p>
+                            <br>
+                            <p>
+                                Het andere doel hiervan is om te zorgen voor een systeem waarin de wensen van de
+                                salesafdeling en klanten vervuld worden.
+                            </p>
+                            <br>
+                            <h6 class="description">Maak_website.init</h6>
+                            <p>
+                                Met deze voorbereiding ben ik begonnen met de bouw van de continuous integration
+                                omgeving. Het verslag over de bouw van hiervan is <a
+                                    routerLink="/ontwikkelen/automatiseren-workflow">hier</a> te vinden.
+                            </p>
+                            <p>
+                                Het aanmaken van nieuwe installaties gebeurt nu “met een druk op de knop”. In
+                                samenwerking met de continuous integration omgeving heb ik een script geschreven waarin
+                                het volgende gebeurt:
+                            </p>
+                            <ul>
+                                <li>Website aanmaken op de webserver (met eigen url).</li>
+                                <li>Database met aparte gebruiker wordt aangemaakt.</li>
+                                <li>Volledige configuratie Laravel en Angular projecten (Deze vormen samen de
+                                    BBsdesk).
+                                </li>
+                                <li>DNS records aanmaken bij domeinprovider.</li>
+                                <li>Inschieten in de pipeline van Jenkins (Continuous integration).</li>
+                            </ul>
+                            <br>
+                            <p>
+                                Het script is <a href="../assets/img/zipfiles/automated_init.zip"
+                                                 target="_blank">hier</a> terug te vinden en is volledig voorzien van
+                                commentaar.
+                            </p>
+                            <br>
+                            <h6 class="description">Beveiliging</h6>
+                            <p>
+                                Wat vaak nog over het hoofd gezien wordt is het testen en beveiligen van de applicatie,
+                                dit zit hier helemaal in verweven. Denk aan data in eigen beheer door aparte databases.
+                            </p>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/databases_bbsdesk.png"
+                                 alt="jenkins pipeline">
+                            <small>Databases BBSdesk</small>
+                            <br>
+                            <br>
+                            <p>
+                                Elke database heeft ook een aparte gebruiker waardoor er geen mogelijkheid bestaat dat
+                                de klanten bij elkaars database kunnen komen. Dit met het idee van privacy en uitlekken
+                                van bedrijfsgevoelige informatie in het achterhoofd. Ook worden alle instanties
+                                geserveerd met een SSL-certificaat (beveiligde https verbinding).
+                            </p>
+                            <br>
+                            <h6 class="description">Testing 1, 2 3</h6>
+                            <p>
+                                Een belangrijk punt vanuit de developers was het testen. Vooral met de toekomst in het
+                                vooruitzicht was dit een punt wat zeker meegenomen moest worden. Dit heb ik in
+                                samenwerking met Jeroen opgepakt.
+                            </p>
+                            <br>
+                            <p>
+                                Jeroen heeft een aantal fantastische unit tests geschreven welke ik op mijn plaats in de
+                                CI ging integreren. Deze testen zorgen ervoor dat bij het updaten en installeren van
+                                installaties de belangrijkste onderdelen door de computer in plaats van mensen. Dit
+                                scheelt aanzienlijk veel tijd.
+                            </p>
+                            <br>
+                            <p>
+                                Wat opviel is het verschil tussen lokale development omgevingen en de productie
+                                omgeving. Denk aan een verschil in dependency versies (PHP, Apache, NodeJS etc)
+                                bijvoorbeeld.
+                            </p>
+                            <br>
+                            <p>
+                                De samenwerking met Jeroen ging echter heel soepel en vlot waardoor we deze testen op
+                                een goede manier konden integreren op de webserver.
+                            </p>
+                            <br>
+                            <h6 class="description">Ontvangst</h6>
+                            <p>
+                                De reactie vanuit de partijen was fantastisch. Mike weet niets van de technische
+                                achterkant, maar was positief verrast toen we samen de eerste url's van de pilot klanten
+                                invulden. “Dit is helemaal top Cas, echt fantastisch”.
+                            </p>
+                            <br>
+                            <p>
+                                Ook vanuit de andere kant, de developers, was de ontvangst goed. Voorheen was het live
+                                zetten van een enkele website en/of applicatie een volledige dagtaak voor 2 developers,
+                                nu is het een kwestie van minuten geworden.
+                            </p>
+                            <br>
+                            <h6 class="description">Resultaat</h6>
+                            <p>
+                                Dit resulteerde in een systeem waarin de wensen van beide partijen tegemoet gekomen
+                                waren. Het voordeel van deze aanpak is dat ik niet lukraak begonnen ben met het bouwen
+                                van een systeem waarin heel veel aannames zaten.
+                            </p>
+                            <br>
+                            <p>
+                                Hieronder een screenshot van de productie pipeline:
+                            </p>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/instanties_bbsdesk.png"
+                                 alt="instanties_bbsdesk">
+                            <br>
+                            <br>
+                            <p>
+                                De pipeline houdt in dat de interne variant van de BBSdesk volledig wordt geïnstalleerd,
+                                gebouwd en getest wordt. Vervolgens worden de instanties van al de klanten die de
+                                BBSdesk afnemen van een update voorzien. Dit betekent dat er geen onstabiel product bij
+                                de klant terecht komt. Dit wordt allemaal in gang gezet met een druk op de knop in ons
+                                versiebeheer programma “ Gitkraken”.
+                            </p>
+                            <br>
+                            <p>
+                                Dit wordt in gang gezet met een druk op de knop in het
+                                versiebeheer programma “Gitkraken”.
+                            </p>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/kraken.png"
+                                 alt="gitkraken">
+                            <br>
+                            <br>
+                            <h6 class="description">Reflectie</h6>
+                            <p>
+                                De manier waarop ik dit project aangepakt heb is iets waar ik zeer trots op ben. Door
+                                eerst de wensen van de stakeholder goed in kaart te brengen heb ik een omgeving
+                                neergezet die niet alleen tijdbesparend is, het zorgt ook voor veiligheid die de data
+                                van de klanten waarborgt. Dit is een onderwerp die in de hedendaagse maatschappij veel
+                                ter sprake komt, ook hierdoor was dit een belangrijk punt om mee te nemen.
+                            </p>
+                            <br>
+                            <p>
+                                Echter, ik had de schaal van dit project te klein ingeschat. Aan het einde van mijn
+                                stage heb ik een werkend platform neergezet, maar er waren nog een aantal zaken die ik
+                                graag had ingebouwd. De grootste teleurstelling is het ontbreken van Docker integratie.
+                                Gelukkig stelt Bol & Boosch mij in staat dit na mijn stageperiode verder uit te werken,
+                                vandaar dat ik niet verder in ga op dit onderwerp.
+                            </p>
+                            <br>
+                            <p>
+                                Achteraf gezien had ik hier een betere tijdsplanning voor moeten maken, maar ik ben blij
+                                met het resultaat.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a routerLink="/betrokken" class="btn btn-danger btn-round" style="margin: 25px 44%;">Terug naar
+                Competenties</a>
+            <!-- The Modal -->
+            <div id="myModal" class="modal" style="z-index: 1">
+
+                <!-- The Close Button -->
+                <span (click)="closeModal()" class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+        </div>
+    </div>
+</div>

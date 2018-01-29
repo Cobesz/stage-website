@@ -1,0 +1,378 @@
+<div class="wrapper">
+    <div class="page-header page-header-xs" data-parallax="true"
+         style="background-image: url('../assets/img/fabio-mangione.jpg');">
+        <div class="filter"></div>
+    </div>
+    <div class="section profile-content">
+        <div class="container">
+            <div class="owner">
+                <div class="avatar">
+                    <img src="../assets/img/gitlab.png" alt="Circle Image"
+                         class="img-circle img-no-padding img-responsive top-img">
+
+                </div>
+                <div class="name">
+                    <h4 class="title">Onderzoek Continuous Integration<br/></h4>
+                    <h6 class="description">Inleiding</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto text-center">
+                    <p class="description">
+                        Dit onderzoek schrijf ik om de processen binnen ons tech bedrijf te kunnen optimaliseren.
+                        Momenteel worden er nog (te) veel fouten gemaakt met het live zetten of updaten van projecten.
+                        Deze workflow is momenteel volledig afhankelijk van menselijke handelingen en deze brengen ook
+                        menselijke fouten met zich mee. Deze fouten en de risico's die dit met zich meebrengen wil ik
+                        beantwoorden met de volgende onderzoeksvraag:
+                    </p>
+                    <br>
+                    <p class="description">
+                        "Hoe kan het risico op menselijke fouten binnen een "Continuous Integration" omgeving worden
+                        geminimaliseerd?"
+                    </p>
+                </div>
+            </div>
+            <br/>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h6 class="description">Onderzoeksaanpak</h6>
+                            <p>
+                                Mijn onderzoek zal bestaan uit het uitzoeken van de problemen die ondervonden worden bij
+                                mijn stagebedrijf met het live zetten van nieuwe projecten en updates uitrollen voor
+                                bestaande projecten. Hoe deze problemen aangepakt kunnen worden, welke methodes er
+                                gebruikt worden en een stuk deskresearch om deze mee te vergelijken en een passende
+                                keuze te kunnen maken voor het bedrijf.
+                            </p>
+                            <br>
+                            <h6 class="description">Het probleem</h6>
+                            <p>
+                                Om te beginnen een illustratie die de huidige situatie aardig opsomt
+                            </p>
+                            <img (click)="open($event)" class="evidence-images" src="../assets/img/onderzoek1.png"
+                                 alt="jenkins pipeline">
+                            <br>
+                            <br>
+                            <p>
+                                Over het algemeen gebeuren de meeste fouten als er updates uitgerold worden. Als een
+                                project eenmaal opgezet is dan draait het over het algemeen goed.
+                                Een developer schrijft zijn code op zijn eigen computer, test hier ook op en zet zijn
+                                wijzigingen door naar de server. Het kan zijn dat hij niet alle bestanden uploadt, of
+                                dat er conflicten in bestanden ontstaan of zelfs hele stukken code per ongeluk
+                                verwijderd waar een collega aan gewerkt heeft.
+                            </p>
+                            <br>
+                            <p>
+                                Over het algemeen gebeuren de meeste fouten als er updates uitgerold worden. Als een
+                                project eenmaal opgezet is dan draait het over het algemeen goed.
+                                Een developer schrijft zijn code op zijn eigen computer, test hier ook op en zet zijn
+                                wijzigingen door naar de server. Het kan zijn dat hij niet alle bestanden uploadt, of
+                                dat er conflicten in bestanden ontstaan of zelfs hele stukken code per ongeluk
+                                verwijderd waar een collega aan gewerkt heeft.
+                            </p>
+                            <br>
+                            <p>
+                                Hieronder een kleine opsomming:
+                            </p>
+                            <small>Initiële upload</small>
+                            <ul>
+                                <li>Bestandsrechten</li>
+                                <li>Storing in de verbinding</li>
+                                <li>Virtual host bestand verkeerd configureren.</li>
+                                <li>Omgeving komt niet overeen (Windows en Mac zijn anders dan de Linux server)</li>
+                                <li>Dependencies komen niet overeen (php 5.6 op de werk laptop, php 7.0 op de server)
+                                </li>
+                            </ul>
+                            <small>Updates</small>
+                            <ul>
+                                <li> Niet alle bestanden uploaden</li>
+                                <li>Stukken code van collega's overschrijven of verwijderen</li>
+                            </ul>
+                            <br>
+                            <p>
+                                Op dit soort momenten voel je jezelf soms meer een "brandweerman" dan een daadwerkelijke
+                                developer. Je bent constant brandjes aan het blussen.
+                            </p>
+                            <br>
+                            <h6 class="description">De professionals zeggen</h6>
+                            <p>
+                                Mojtaba Shahin, Muhammad Ali Babar en Liming Zhu (2017) schrijven het volgende: “We have
+                                identified 30 approaches and associated tools, which facilitate the implementation of
+                                continuous practices in the following ways: (1) reducing build and test time in
+                                continuous integration (CI); (2) increasing visibility and awareness on build and test
+                                results in CI; (3) supporting (semi-) automated continuous testing; (4) detecting
+                                violations, flaws, and faults in CI; (5) addressing security and scalability issues in
+                                deployment pipeline; and (6) improving dependability and reliability of deployment
+                                process.”.
+                            </p>
+                            <p>
+                                Dit somt in grote delen de punten op die Bol & Boosch als problemen ervaart.
+                                Mede door aanbevelingen van deze heren ben ik tot de beschikking gekomen van een set
+                                tools, zoals Github en Jenkins, waarmee ik verder kon in mijn zoektocht. Om er achter te
+                                komen wat de beste tools zijn voor mijn stage bedrijf ben ik deskresearch gaan doen.
+                            </p>
+                            <br>
+                            <h6 class="description">Deskresearch</h6>
+                            <p>
+                                In dit gedeelte ga ik in op verschillende tools waarmee de problemen van mijn
+                                stagebedrijf verlicht kunnen worden. Hierin refereer ik een aantal keer naar “Git”. Git
+                                is een vorm van versiebeheer waarin ontwikkelaars hun code kunnen opslaan. Hierin
+                                bestaan meerdere “branches. Deze branches refereren aan de staat waarin dat specifieke
+                                stuk code zich bevindt. Develop staat voor in ontwikkeling, staging is klaar om getest
+                                te worden en master is stabiele code.
+                            </p>
+                            <h6 class="description">Doel</h6>
+                            <p>
+                                Het doel van dit onderzoek is om een tool te vinden waar developers geholpen worden met
+                                het testen en deployen van hun applicaties en/of websites. Het idee is om developers van
+                                de staging en productie servers af te houden (lees: zelf niet meer uploaden via
+                                FileZilla). Door een push op de develop en master branch wordt het project automatisch
+                                gebouwd door een pipeline die ingesteld staat op de git server.
+                            </p>
+                            <br>
+                            <p>
+                                Dit is de traditionele (handmatige) aanpak, zoals het momenteel bij Bol & Boosch gaat.
+                            </p>
+                            <ul>
+                                Traditional Approach
+                                <li>Code Check-in</li>
+                                <li>Compile and BuildDeployment Archive</li>
+                                <li>Approvals</li>
+                                <li>Request for deployment</li>
+                                <li>Testing</li>
+                            </ul>
+                            <br>
+                            <p>
+                                Dit is het gewenste resultaat, geautomatiseerd.
+                            </p>
+                            <img (click)="open($event)" class="evidence-images" src="../assets/img/onderzoek2.png"
+                                 alt="jenkins pipeline">
+                            <small>Voorbeeld van jenkins</small>
+                            <br>
+                            <br>
+                            <h6 class="description">Praktijkvoorbeeld</h6>
+                            <p>Harrie heeft zijn feature gebouwd/getest en gaat deze nu mergen met de develop branch.
+                                Normaal zou hij de nieuwe bestanden dan moeten uploaden via FileZilla, maar nu doet het
+                                systeem dit automatisch voor hem waardoor hij zijn wijzigingen gelijk kan bekijken op
+                                staging.lopendproject.nl. Als deze versie getest en goedgekeurd is door de opdrachtgever
+                                dan wordt de develop branch gemerged met de master door een nieuwe release aan te maken.
+                                Op het moment dat dit gebeurd dan bouwt het systeem een nieuwe versie op
+                                www.lopendproject.nl.
+                            </p>
+                            <br>
+                            <p>Hieronder een illustratie die het bovenstaande voorbeeld in kaart brengt: handmatig
+                                tegenover automatisch</p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images" src="../assets/img/onderzoek3.jpg"
+                                 alt="jenkins pipeline">
+                            <small>Handmatig</small>
+                            <br>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images" src="../assets/img/onderzoek4.jpg"
+                                 alt="jenkins pipeline">
+                            <small>Automatisch</small>
+                            <br>
+                            <br>
+                            <br>
+                            <h6 class="description">Jenkins vs Gitlab-CI</h6>
+                            <p>
+                                In dit onderdeel ga ik twee tools analyseren, zodat ik de voor- en nadelen tegenover
+                                elkaar kan zetten.
+                            </p>
+                            <br>
+                            <p>
+                                Het gaat om <a href="https://jenkins.io">Jenkins</a> en <a
+                                    href="https://about.gitlab.com/features/gitlab-ci-cd/">Gitlab-CI</a>, allebei tools
+                                waarmee het mogelijk is om ons doel te
+                                behalen.
+                            </p>
+                            <br>
+                            <h6 class="description">Jenkins</h6>
+                            <p>
+                                Deze tool bestaat al sinds 2011 en is gebouwd in java. Het grote voordeel is dat Jenkins
+                                geleverd wordt met een gui (web interface). Het is opensource en er zijn honderden
+                                plugins beschikbaar om onze wensen te verwezenlijken. Echter werkt het niet out of the
+                                box en vereist het werk om het systeem in te stellen. Het werkend krijgen van de service
+                                is met één terminal commando uit te voeren, dat is prettig.
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/jenkins-dashboard.png"
+                                 alt="jenkins pipeline">
+                            <br>
+                            <br>
+                            <p>
+                                Jenkins wordt door de community vaak als een van de betere opties aangeraden.
+                            </p>
+                            <br>
+                            <h6 class="description">Gitlab-CI</h6>
+                            <p>Het grote voordeel van GitLab-CI is dat het geïntegreerd zit in GitLab. Dit is toevallig
+                                ook de partij waar de Bol & Boosch developers hun repositories onderbrengen. Je hebt
+                                niet echt een GUI hebt waar je op terug kan vallen, je kan wel de huidige jobs en
+                                pipelines bekijken. Het instellen van de repo’s gaat echter wel via een configuratie
+                                bestand, het is daarom niet overzichtelijk voor de leek. Ook mist Gitlab-CI plugins,
+                                zoals Jenkins deze heeft. Dit zou eventuele uitbreidingen kunnen hinderen.
+                            </p>
+                            <br>
+                            <p>
+                                Een groot voordeel is dat er geen installatie hoeft te gebeuren, het wordt meegeleverd
+                                met GitLab.
+                            </p>
+                            <br>
+                            <h6 class="description">Wat vindt het internet?</h6>
+                            <p>
+                                Slant is een website die je helpt keuzes maken in de beste opties. Voor software, maar
+                                ook producten. Er zit een hele community achter en dit is wat zij te zeggen hebben
+                                over:</p>
+                            <p>
+                                “What are the best continuous integration tools?”
+                                <a href="https://www.slant.co/topics/799/~best-continuous-integration-tools, 2017">(https://www.slant.co/topics/799/~best-continuous-integration-tools,
+                                    2017)</a>
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images" src="../assets/img/recommendation.png"
+                                 alt="jenkins pipeline">
+                            <br>
+                            <br>
+                            <br>
+                            <h6 class="description">Pro/Cons</h6>
+                            <br>
+                            <small>Jenkins</small>
+                            <img (click)="open($event)" class="evidence-images" src="../assets/img/jenkins-pro-cons.png"
+                                 alt="jenkins pipeline">
+                            <br>
+                            <br>
+                            <small>Gitlab-CI</small>
+                            <img (click)="open($event)" class="evidence-images" src="../assets/img/gitlab-pro-cons.png"
+                                 alt="jenkins pipeline">
+                            <br>
+                            <br>
+                            <br>
+                            <h6 class="description">Eigen bevindingen</h6>
+                            <p>
+                                Gitlab-CI stopte al heel snel met loggen als er bijvoorbeeld een job voor de kennisbank
+                                opengezet wordt. Dit is omdat het maximaal aantal regels bereikt is. Dit kan voor
+                                sommige applicaties best lastig worden, aangezien er veel modules gebruikt kunnen
+                                worden. Helaas is Gitlab-CI qua git aanbieders beperkt tot Gitlab.
+                            </p>
+                            <p>
+                                Jenkins daarentegen werkte vlekkeloos, maar kost wat meer moeite om in te stellen. De
+                                user interface is prettig en overzichtelijk. Jenkins is niet beperkt tot een aanbieder
+                                van git oplossingen.
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/jenkins-interface.PNG"
+                                 alt="jenkins pipeline">
+                            <br>
+                            <br>
+                            <h6 class="description">Conclusie</h6>
+                            <p>
+                                Balalaie, Heydarnoori, en Jamshidi (2016) zeiden in hun onderzoek:
+                            </p>
+                            <p class="description">
+                                “DevOps is a set of practices that aim to decrease the time between changing a system
+                                and transferring that change to the production environment. However, they also insist on
+                                maintaining software quality in terms of both code and the delivery mechanism.”
+                            </p>
+                            <br>
+                            <p>
+                                Door de bevindingen van professionals en testen die er gedaan zijn tijdens het
+                                deskresearch kan ik concluderen dat de onderzoeksvraag beantwoord is en kan Bol & Boosch
+                                aan de slag met de bouw van haar eigen Continuous Integration omgeving. Door een
+                                development en productie omgeving naar deze standaarden in te richten worden er minder
+                                fouten gemaakt en is het uitgeven van updates van bestaande en uitrollen van nieuwe
+                                projecten veiliger, getest en makkelijker.
+                            </p>
+                            <br>
+                            <p>
+                                Dit scheelt niet alleen veel werk, maar ook het moraal van de werknemers kan verbeteren.
+                                Eerder in het stuk zei ik het volgende: “Op dit soort momenten voel je jezelf soms meer
+                                een "brandweerman" dan een daadwerkelijke developer. Je bent constant brandjes aan het
+                                blussen.” Met een oplossing zoals deze kunnen developers doen waar ze goed in zijn: Het
+                                ontwikkelen van producten.
+                            </p>
+                            <br>
+                            <h6 class="description">Bronnen</h6>
+                            <small>
+                                Fun Fun Function. (2017, 26 juni). Continuous Integration - What's the point? -
+                                Continuous Integration P1 - Fun Fun Function [Video]. Geraadpleegd op 22 november 2017,
+                                van <a href="https://www.youtube.com/watch?v=ymPOI4gWQFY">
+                                https://www.youtube.com/watch?v=ymPOI4gWQFY>
+                            </a>
+                            </small>
+                            <br>
+                            <br>
+                            <small>
+                                Edureka! (2017, 25 januari). What is Jenkins | Jenkins Tutorial for Beginners | Jenkins
+                                Continuous Integration Tutorial | Edureka [Video]. Geraadpleegd op 22 november 2017, van
+                                <a href="https://www.youtube.com/watch?v=p7-U1_E_j3w&t=25s">
+                                    https://www.youtube.com/watch?v=p7-U1_E_j3w&t=25s
+                                </a>
+                            </small>
+                            <br>
+                            <br>
+                            <small>
+                                Weyand, C., Ali Chromik, J., Wolf, L., Kötte, S., Haase, K., Felgentreff, T., . . .
+                                Hirschfeld, R. (2017). Improved Hosted Continuous Integration Services. Geraadpleegd van
+                                <a href="https://publishup.uni-potsdam.de/opus4-ubp/frontdoor/deliver/index/docId/9425/file/tbhpi108.pdf">
+                                    https://publishup.uni-potsdam.de/opus4-ubp/frontdoor/deliver/index/docId/9425/file/tbhpi108.pdf
+                                </a>
+                            </small>
+                            <br>
+                            <br>
+                            <small>
+                                Shahin, M., Ali Babar, M., & Zhu, L. (2017). Continuous Integration, Delivery and
+                                Deployment: A Systematic Review on Approaches, Tools, Challenges and Practices.
+                                Geraadpleegd van <a href="http://ieeexplore.ieee.org/abstract/document/7884954/">
+                                http://ieeexplore.ieee.org/abstract/document/7884954/
+                            </a>
+                            </small>
+                            <br>
+                            <br>
+                            <small>
+                                Balalaie, A., Heydarnoori, A., & Jamshidi, P. (2016). Microservices Architecture Enables
+                                DevOps: Migration to a Cloud-Native Architecture. Geraadpleegd van
+                                <a href="http://ieeexplore.ieee.org/abstract/document/7436659/">
+                                    http://ieeexplore.ieee.org/abstract/document/7436659/
+                                </a>
+                            </small>
+                            <br>
+                            <br>
+                            <h6 class="description">Reflectie</h6>
+                            <p>
+                                Ik ben heel blij dat ik dit onderzoek gedaan heb. Niet alleen omdat ik hiermee meer te
+                                weten ben gekomen over de term “Continuous Integration”, maar ook omdat ik een groot stuk
+                                aannames heb kunnen verwerpen en een set aan tools heb kunnen schrappen die ik vooraf
+                                nodig achtte.
+                            </p>
+                            <br>
+                            <p>
+                                Wat ik achteraf anders zou doen (lees: als ik na school bij een bedrijf kom te werken)
+                                is naarmate de projecten lopen, het onderzoek herzien om de veranderingen die tijdens
+                                het project van kracht komen te herzien. Dit was helaas gezien de tijdsperiode niet te
+                                realiseren.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a routerLink="/ontwikkelen" class="btn btn-danger btn-round" style="margin: 25px 44%;">Terug naar
+                Competenties</a>
+            <!-- The Modal -->
+            <div id="myModal" class="modal" style="z-index: 1">
+
+                <!-- The Close Button -->
+                <span (click)="closeModal()" class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+        </div>
+    </div>
+</div>

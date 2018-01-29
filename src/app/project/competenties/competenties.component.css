@@ -1,0 +1,37 @@
+
+.page-header {
+    min-height: 95vh;
+}
+
+#backButton {
+    float: left;
+    margin:40px 0 500px;
+    z-index: 1;
+}
+
+#summary {
+    min-height: 50vh;
+    margin-top: 90px;
+}
+
+#overview {
+    min-height: 50vh;
+    margin-top: 90px;
+}
+
+.nc-icon {
+    color: #000;
+    font-size: 4em;
+    /*width: 780px;*/
+    margin: 0 auto;
+}
+
+.btn-outline-default, .btn-round {
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-default:hover {
+    background-color: white;
+    color: #000;
+}

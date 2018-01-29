@@ -1,0 +1,114 @@
+<div class="wrapper" xmlns="http://www.w3.org/1999/html">
+    <div class="page-header page-header-xs" data-parallax="true"
+         style="background-image: url('../assets/img/fabio-mangione.jpg');">
+        <div class="filter"></div>
+    </div>
+    <div class="section profile-content">
+        <div class="container">
+            <div class="owner">
+                <div class="avatar">
+                    <img src="../assets/img/aws.png" alt="Traject"
+                         class="img-circle img-no-padding img-responsive top-img">
+
+                </div>
+                <div class="name">
+                    <h4 class="title">Inrichting webserver<br/></h4>
+                    <h6 class="description">Inleiding</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto text-center">
+                    <p class="description">
+                        Voordat ik bij Bol & Boosch kwam werken werd elke website apart gehost bij een hosting provider.
+                        Deze providers zijn waren Hostnet en TransIP. Aangezien Bol & Boosch de websites van Zorgeloosch
+                        onderhoudt hebben wij toegang tot het hostnet account van dit bedrijf. Alle domeinen en hosting
+                        doeleinden van Bol & Boosch zelf waren bij TransIP ondergebracht.
+                    </p>
+                </div>
+            </div>
+            <br/>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h6 class="description">Kosten</h6>
+                            <p>
+                                Zoals ik al schreef, elke website had haar eigen aparte hosting bij een van de twee
+                                bovengenoemde providers. Dit zorgde voor aardig wat kosten en onderhoud. Dit laatste
+                                omdat er met 2 providers gewerkt wordt.
+                            </p>
+                            <br>
+                            <p>
+                                Webhosting per website kost al snel €5 per maand. Voor Zorgeloosch onderhoudt mijn
+                                stagebedrijf 6 websites en het bedrijf zelf had het project BBSDesk in de aantocht.
+                                Vandaar dat ik opperde om de hosting in house te gaan verzorgen door middel van Virtual
+                                Private Servers (VPS).
+                            </p>
+                            <br>
+                            <p>
+                                Door zelf de hosting te gaan realiseren gingen de kosten en onderhoud drastisch naar
+                                beneden. De domeinen van Bol & Boosch zijn namelijk al richting de 25 gegaan, plus die
+                                van Zorgeloosch, wat uitkomt op een prijs van om en nabij €160 p/m aan hosting.
+                                Vergelijk dit met de €70 p/m die het bedrijf nu kwijt is aan hosting, dan scheelt dit
+                                aanzienlijk.
+                            </p>
+                            <br>
+
+
+                            <h6 class="description">Onderhoud en mogelijkheden</h6>
+                            <p>
+                                Het andere nadeel van de oude manier van hosting is dat er maar een bepaald aantal
+                                technieken mogelijk zijn, voor extra talen of ondersteuning van frameworks moet extra
+                                betaald worden. Door de webserver in eigen beheer te hebben zit hier geen restrictie op.
+                            </p>
+                            <br>
+                            <p>
+                                Zo kan er zonder problemen een angular project opgezet worden en het aantal databases
+                                zijn oneindig.
+                            </p>
+                            <br>
+                            <h6 class="description">De webserver</h6>
+                            <p>
+                                De server wordt afgenomen bij Amazon Web Services (AWS). Deze is gestationeerd in een
+                                datacentrum in Frankfurt en is op afstand te benaderen met een SSH verbinding.
+                            </p>
+                            <p>
+                                Als besturingssysteem heb ik gekozen voor Ubuntu Server 16.04 LTS. Dit omdat dit een
+                                standaard is in webhosting en ik er zelf persoonlijk ervaren mee ben. Het configureren
+                                kostte mij een kleine week, waarna de eerste websites overgezet zijn.
+
+                            </p>
+                            <br>
+                            <p>
+                                Het configureren koste mij een kleine week, waarna ik de eerste websites overgezet heb.
+                            </p>
+                            <br>
+                            <h6 class="description">Reflectie</h6>
+                            <p>
+                                Ik ben blij dat ik deze klus op me genomen heb. Niet alleen omdat het kosten bespaard
+                                voor Bol & Boosch, maar ook omdat ik zelf zeer geïnteresseerd ben in de achterliggende
+                                technieken. Op deze manier kon ik mij verdiepen in de materie en wil het bedrijf dan ook
+                                bedanken voor deze mogelijkheid.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a routerLink="/ondernemen" class="btn btn-danger btn-round" style="margin: 25px 44%;">Terug naar
+                Competenties</a>
+            <!-- The Modal -->
+            <div id="myModal" class="modal" style="z-index: 1">
+
+                <!-- The Close Button -->
+                <span (click)="closeModal()" class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+        </div>
+    </div>
+</div>
