@@ -1,3 +1,342 @@
-<p>
-  iteraties-bbsdesk works!
-</p>
+<div class="wrapper">
+    <div class="page-header page-header-xs" data-parallax="true"
+         style="background-image: url('../assets/img/fabio-mangione.jpg');">
+        <div class="filter"></div>
+    </div>
+    <div class="section profile-content">
+        <div class="container">
+            <div class="owner">
+                <div class="avatar">
+                    <img src="../assets/img/B&B_Icon_Square_RedD.png" alt="Traject"
+                         class="img-circle img-no-padding img-responsive top-img">
+
+                </div>
+                <div class="name">
+                    <h4 class="title">Iteraties BBSdesk<br/></h4>
+                    <h6 class="description">Inleiding</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto text-center">
+                    <p class="description">
+                        Het idee van de Bol & Boosch Software Desk, afgekort BBSdesk, is ontstaan met het idee voor een
+                        kennisbank voor intern gebruik. Dit is uiteraard uitgegroeid tot een gigantisch project waarvan
+                        alles inhouse gemaakt is. Maar graag blik ik terug op de verschillende iteraties die het project
+                        ondergaan heeft. Iteraties waarvan ik vanaf dag 1 betrokken ben geweest.
+                    </p>
+                </div>
+            </div>
+            <br/>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h6 class="description">Schetsen 1.0</h6>
+                            <p>
+                                Bij Bol & Boosch krijgt iedereen op elke vrijdag de gelegenheid om voor jezelf nieuwe
+                                ideeën en/of projecten uit te werken. Op zo’n vrijdag had ik een brainstorm met de
+                                callcenter manager van Bol & Boosch, Danny de Keijzer. Danny had een irritatie, namelijk
+                                het feit dat hij elke avond gebeld werd met vragen van het callcenter personeel over
+                                onderwerpen en handelingen die eigenlijk al bekend moesten zijn bij het personeel.
+                            </p>
+                            <br>
+                            <p>
+                                Vanuit dit euvel zijn we toen gaan nadenken hoe we dit probleem kunnen aanpakken en wat
+                                daarvoor nodig was. Al snel kwamen we op een soort notitie/veelgestelde vragen achtige
+                                oplossing waarin danny dan zijn FAQ’s kan schrijven en de medewerkers deze dan terug
+                                kunnen zien. Vervolgens ben ik aan de slag gegaan met de eerste schetsen.
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="afdeling_kiezen"
+                                 src="../assets/img/wireframes/afdeling_kiezen2.png"
+                                 alt="jenkins pipeline">
+                            <br>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/afdeling_gekozen1.png"
+                                 alt="afdeling_gekozen">
+                            <br>
+                            <br>
+                            <p>
+                                Het callcenter heeft 2 onderdelen waarvoor gebeld wordt, hypotheken en scheiden. Met
+                                deze afdelingen in het achterhoofd zijn deze eerste schetsen gemaakt met het doel dat
+                                medewerkers binnen de eigen afdelingen konden zoeken naar informatie.
+                            </p>
+                            <br>
+                            <p>
+                                Hier zijn een aantal iteraties op gedaan, zoals deze voor het kiezen van een afdeling.
+                            </p>
+
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/afdeling_kiezen1.png"
+                                 alt="afdeling_gekozen">
+                            <br>
+                            <br>
+                            <p>
+                                Vervolgens heb ik een gedetailleerde versie gemaakt met met photoshop
+                            </p>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/opzetje_photoshop.jpeg"
+                                 alt="afdeling_gekozen">
+                            <br>
+                            <br>
+                            <p>
+                                Ik heb gekozen voor de rode huisstijl kleur van Bol & Boosch, om onze eigen stijl door
+                                te kunnen zetten herkenbaar te maken voor collega call medewerkers.
+                            </p>
+                            <h6 class="description">Kennisbank 1.0</h6>
+                            <p>
+                                De feedback op het eerste opzetje in photoshop was dat er alsnog binnen de afdelingen
+                                zelf gezocht moest kunnen worden, dus heb ik deze stijl gecombineerd met de oude
+                                wireframes en ben ik begonnen met de bouw van de eerste versie van het product.
+                            </p>
+                            <br>
+                            <p>
+                                Deze versie is er zo uit komen te zien.
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/kennisbank1.png"
+                                 alt="kennisbank1">
+                            <br>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/kennisbank2.png"
+                                 alt="kennisbank2">
+                            <br>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/kennisbank3.png"
+                                 alt="kennisbank3">
+                            <br>
+                            <br>
+                            <p>
+                                Om de content eenvoudig te vullen is heb ik gekozen voor een back-end op basis van
+                                wordpress. Danny was al bekend met de werking hiervan en zou zonder extra leer aan de
+                                slag kunnen gaan met het invullen van veelgestelde vragen.
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/kennisbank_backend1.png"
+                                 alt="kennisbank_backend">
+                            <br>
+                            <br>
+                            <p>
+                                Om de content op een effectieve manier te serveren naar de medewerkers heb ik gekozen
+                                voor een front-end op basis van Angular, een javascript framework waarmee pagina’s na
+                                een korte initiële laadtijd heel snel geladen zijn. De veelgestelde vragen worden door
+                                middel van een API naar de front-end toegestuurd. Zo zijn het in weze 2 projecten die
+                                samen 1 product vormen.
+                            </p>
+                            <br>
+                            <h6 class="description">De grote jongens kijken mee</h6>
+                            <p>
+                                Commercieel directeur Mike el Kiki had, sinds de eerste versie in gebruik genomen was
+                                door ons callcenter, de kennisbank laten zien bij een aantal van zijn contacten. Onder
+                                meer bij Livechat Service en Zorgeloosch. Tot mijn grote verbazing waren zij positief
+                                onder de indruk van dat ooit zo kleine projectje wat ik op een paar vrijdagen in elkaar
+                                gezet had. Mike vroeg mij of het mogelijk was om een installatie te maken voor Live Chat
+                                Service (LCS). Dit was in principe zo gebeurd en deze versie heb ik onder
+                                lcs.bolboosch.nl online gezet.
+                            </p>
+                            <br>
+                            <p>
+                                Later kwam ik er achter dat LCS de kennisbank op een hele andere manier gebruikte dan
+                                waar het voor bedoeld was. In plaats van 4 categorieën hadden zij er ineens meer dan 80
+                                op de frontpage staan.
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/lcskennisbank1.png"
+                                 alt="lcskennisbank">
+                            <br>
+                            <br>
+                            <p>
+                                Ook hadden zij behoefte aan extra functionaliteiten, waaronder zoeken door alle vragen,
+                                geneste categorieën en het aanmaken van tags binnen de berichten waar op gezocht kan
+                                worden.
+                            </p>
+                            <br>
+                            <p>
+                                Op basis van deze vraag en de steeds groter wordende aandacht vanuit externe partijen,
+                                denk aan een bedrijf als ING, is er toen besloten een nieuwe variant te maken met een
+                                nieuw design. Echter, vanaf dit punt zal alles zelf gebouwd gaan worden aangezien
+                                wordpress te zwaar is voor deze oplossing en sommige functionaliteiten niet kan
+                                waarborgen.
+                            </p>
+                            <h6 class="description">Schetsen 2.0</h6>
+                            <p>
+                                De eerste wireframes begonnen met schetsen van het nieuwe admin paneel.
+                            </p>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/wireframeDashboard1.png"
+                                 alt="Dashboard1">
+                            <br>
+                            <br>
+                            <p>
+                                Wat opvalt is dat er gekozen is voor een layout die vergelijkbaar is met die van
+                                wordpress. Hier is voor gekozen omdat de huidige gebruikers deze interface al gewend
+                                zijn waardoor dit design gelijk herkenbaar is. Links staat een menubalk met alle
+                                onderdelen waarin artikelen aangemaakt kunnen worden. Op het dashboard is er gekozen
+                                voor een opsomming van relevante informatie, zoals het aantal nieuwsartikelen,
+                                veelgestelde vragen en laatste activiteiten.
+                            </p>
+                            <br>
+                            <p>
+                                De feedback die ik hier op heb gekregen is dat er vooral veel teksts staat, wat niet
+                                goed beviel. Later is er gekozen om informatie meer in grafieken weer te geven.
+                            </p>
+                            <br>
+                            <p>
+                                Ook is in dit design gekozen voor een groene kleur. De felle rode kleur die in de eerste
+                                versie gebruikt werd was prominent in beeld en na wat onderzoek bleek dat deze kleur
+                                groen als zakelijk en vertrouwend beschouwd wordt. De keuze is daarop gebaseerd.
+                            </p>
+                            <br>
+                            <p>
+                                Een aantal designs verder hebben is deze keuze teruggedraaid en is er besloten de
+                                nieuwe, rode, huisstijlkleur van Bol & Boosch te implementeren.
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/BBsdesk-dashboard1.png"
+                                 alt="Dashboard2">
+                            <br>
+                            <br>
+                            <h6 class="description">Kennisbank 2.0</h6>
+                            <p>
+                                De kennisbank variant van Live Chat Service gaf een reden om de manier van het tonen van
+                                de veelgestelde vragen te herdenken. Wat opviel is dat zij de content in honderden
+                                categorieën plaatsen wat niet werkte in de eerste versie van het product. Vandaar dat er
+                                besloten is om het zoeken in de content centraal te stellen.
+                            </p>
+                            <p>
+                                Een zoekopdracht zoekt in
+                                eerste instantie in alle categorieën, maar er kan gefilterd worden door middel van
+                                checkboxes om steeds meer specifieke resultaten te krijgen.
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/BBsdesk_categories.png"
+                                 alt="BBSdesk_categories">
+                            <br>
+                            <br>
+                            <p>
+                                Op de home pagina worden de meest gebruikte categorieën als eerste getoond. Als er op 1
+                                van deze categorieën geklikt wordt dan correspondeert dit met het filteren. Er worden
+                                alleen veelgestelde vragen van die categorie getoond.
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/BBsdesk_items1.png"
+                                 alt="BBSdesk_items">
+                            <br>
+                            <br>
+                            <p>
+                                Vergeleken met de oude versie worden er kaarten getoond in plaats van een lijst met
+                                artikelen. Uit feedback van het callcenter kwam regelmatig terug dat er niet in een
+                                oogopslag duidelijk was of de medewerker de juiste informatie voor zich had. Op deze
+                                manier is deze wens vervuld.
+                            </p>
+                            <br>
+                            <h6 class="description">De details</h6>
+                            <p>
+                                De detailview van de eerste variant van de kennisbank was simpel. De vraag op je
+                                antwoord, geen andere dingen erbij. Dit werkte voorheen zonder problemen, echter waren
+                                er toen zo’n 20 vragen in het systeem ingevoerd. Dit aantal werd steeds meer en al snel
+                                kreeg ik de feedback dat het wat te wensen overliet.
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/kennisbank_detail.png"
+                                 alt="Kennisbank_Detail">
+                            <br>
+                            <br>
+                            <p>
+                                De feedback was onder andere dat er pas na het openen van de vraag duidelijk was om welk
+                                item het ging. Het lastige was ook dat als je terug ging naar het overzicht de
+                                zoekresultaten niet behouden werden, de resultaten waar op gezocht was waren kwijt en er
+                                moest opnieuw gezocht worden.
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/BBSdesk_detail.png"
+                                 alt="BBSdesk_Detail">
+                            <br>
+                            <br>
+                            <p>
+                                Deze problemen zijn opgelost in het nieuwe design, evenals het toevoegen van relevante
+                                artikelen in het menu aan de linkerzijde en de commentsectie onder het bericht.
+                            </p>
+                            <br>
+                            <h6 class="description">Scrum en Gebruikerstests</h6>
+                            <p>
+                                Al deze iteraties zijn tot stand gekomen met de scrum-methode. Elke ochtend stand-ups,
+                                sprints van twee weken, retrospectives en sprint planningen waren iedere keer weer aan
+                                de orde.
+                            </p>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/scrumboard.jpeg"
+                                 alt="Scrumboard">
+                            <br>
+                            <br>
+                            <p>
+                                Het voordeel van deze methode is dat je scherp blijft op het doel, je weet waar iedereen
+                                mee bezig is en itereren gaat snel. Dit omdat je feedback snel kan verwerken en weer
+                                opnieuw kan testen in de volgende sprint.
+                            </p>
+                            <br>
+                            <p>
+                                Voor het testen hebben we ook gebruik gemaakt van Hotjar en Google Analytics, hiermee
+                                kan je precies zien wat gebruikers op de website doen.
+                            </p>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/analytics.png"
+                                 alt="analytics">
+                            <br>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/hotjar_overview.png"
+                                 alt="Hotjar_overview">
+                            <br>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/wireframes/hotjar_detail.png"
+                                 alt="Hotjar_overview">
+                            <br>
+                            <br>
+                            <h6 class="description">Reflectie</h6>
+                            <p>
+                                Ik ben zelden zo blij geweest met een aanpak als deze. Het werkt fijn, snel en
+                                doeltreffend. Het was in het begin heel erg wennen, omdat je gewend bent in je eigen
+                                tempo te werken. Dit was al snel normaal geworden en de productiviteit schoot omhoog.
+                            </p>
+                            <br>
+                            <p>
+                                Ook merk ik dat je op deze manier heel anders naar oplossingen gaat kijken, je krijgt
+                                feedback op dingen waar je normaal niet over na zou denken. Kortom: ik zou het de
+                                volgende keer exact zo doen.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a routerLink="/ontwerpen" class="btn btn-danger btn-round" style="margin: 25px 44%;">Terug naar
+                Competenties</a>
+            <!-- The Modal -->
+            <div id="myModal" class="modal" style="z-index: 1">
+
+                <!-- The Close Button -->
+                <span (click)="closeModal()" class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+        </div>
+    </div>
+</div>
