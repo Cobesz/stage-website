@@ -30,6 +30,8 @@ import { ContinuousIntegrationComponent } from './project/competenties/onderzoek
 import { TrajectCiComponent } from './project/competenties/betrokken/traject-ci/traject-ci.component';
 import { IteratiesBbsdeskComponent } from './project/competenties/ontwerpen/iteraties-bbsdesk/iteraties-bbsdesk.component';
 import { InrichtingWebserverComponent } from './project/competenties/ondernemen/inrichting-webserver/inrichting-webserver.component';
+import { TestimonialsComponent } from './project/testimonials/testimonials.component';
+import { BeoordelingComponent } from './project/testimonials/beoordeling/beoordeling.component';
 
 @NgModule({
     declarations: [
@@ -53,7 +55,9 @@ import { InrichtingWebserverComponent } from './project/competenties/ondernemen/
         ContinuousIntegrationComponent,
         TrajectCiComponent,
         IteratiesBbsdeskComponent,
-        InrichtingWebserverComponent
+        InrichtingWebserverComponent,
+        TestimonialsComponent,
+        BeoordelingComponent
     ],
     imports: [
         BrowserModule,

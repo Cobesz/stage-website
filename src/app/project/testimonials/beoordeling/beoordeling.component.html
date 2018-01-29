@@ -1,0 +1,58 @@
+<div class="wrapper" xmlns="http://www.w3.org/1999/html">
+    <div class="page-header page-header-xs" data-parallax="true"
+         style="background-image: url('../assets/img/fabio-mangione.jpg');">
+        <div class="filter"></div>
+    </div>
+    <div class="section profile-content">
+        <div class="container">
+            <div class="owner">
+                <div class="avatar">
+                    <img src="../assets/img/achievement.png" alt="Traject"
+                         class="img-circle img-no-padding img-responsive top-img">
+
+                </div>
+                <div class="name">
+                    <h4 class="title">Beoordeling Stage<br/></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <ul class="list-unstyled">
+                        <li>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/beoordeling/beoordeling3.jpg"
+                                 alt="gitkraken">
+                            <br>
+                            <br>
+
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/beoordeling/beoordeling2.jpg"
+                                 alt="gitkraken">
+                            <br>
+                            <br>
+                            <img (click)="open($event)" class="evidence-images"
+                                 src="../assets/img/beoordeling/beoordeling1.jpg"
+                                 alt="gitkraken">
+                            <br>
+                            <br>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a routerLink="/testimonials" class="btn btn-danger btn-round" style="margin: 25px 44%;">Terug naar
+                Testimonials</a>
+            <!-- The Modal -->
+            <div id="myModal" class="modal" style="z-index: 1">
+
+                <!-- The Close Button -->
+                <span (click)="closeModal()" class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+        </div>
+    </div>
+</div>
