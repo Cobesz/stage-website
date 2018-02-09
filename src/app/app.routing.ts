@@ -21,12 +21,21 @@ import {IteratiesBbsdeskComponent} from './project/competenties/ontwerpen/iterat
 import {InrichtingWebserverComponent} from './project/competenties/ondernemen/inrichting-webserver/inrichting-webserver.component';
 import {TestimonialsComponent} from './project/testimonials/testimonials.component';
 import {BeoordelingComponent} from './project/testimonials/beoordeling/beoordeling.component';
+import {ConclusieComponent} from './project/conclusie/conclusie.component';
+import {TerugkomdagenComponent} from './project/conclusie/terugkomdagen/terugkomdagen.component';
+import {VisieAfstuderenComponent} from './project/conclusie/visie-afstuderen/visie-afstuderen.component';
+import {BezoekStagiairesComponent} from './project/conclusie/bezoek-stagiaires/bezoek-stagiaires.component';
 
 const routes: Routes = [
     { path: 'home',                         component: LandingComponent },
     { path: 'bedrijf',                      component: BedrijfComponent },
     { path: 'competenties',                 component: CompetentiesComponent},
     { path: 'testimonials',                 component: TestimonialsComponent},
+    { path: 'testimonials/beoordeling',     component: BeoordelingComponent},
+    { path: 'conclusie',                    component: ConclusieComponent},
+    { path: 'conclusie/terugkomdagen',      component: TerugkomdagenComponent},
+    { path: 'conclusie/bezoek-stagiaires',  component: BezoekStagiairesComponent},
+    { path: 'conclusie/visie-afstuderen',   component: VisieAfstuderenComponent},
     { path: 'testimonials/beoordeling',     component: BeoordelingComponent},
     { path: 'ontwikkelen',                  component: OntwikkelenComponent},
         { path: 'ontwikkelen/automatiseren-workflow',       component: AutomatiserenComponent},

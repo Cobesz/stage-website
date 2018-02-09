@@ -32,6 +32,10 @@ import { IteratiesBbsdeskComponent } from './project/competenties/ontwerpen/iter
 import { InrichtingWebserverComponent } from './project/competenties/ondernemen/inrichting-webserver/inrichting-webserver.component';
 import { TestimonialsComponent } from './project/testimonials/testimonials.component';
 import { BeoordelingComponent } from './project/testimonials/beoordeling/beoordeling.component';
+import { ConclusieComponent } from './project/conclusie/conclusie.component';
+import { TerugkomdagenComponent } from './project/conclusie/terugkomdagen/terugkomdagen.component';
+import { VisieAfstuderenComponent } from './project/conclusie/visie-afstuderen/visie-afstuderen.component';
+import { BezoekStagiairesComponent } from './project/conclusie/bezoek-stagiaires/bezoek-stagiaires.component';
 
 @NgModule({
     declarations: [
@@ -57,7 +61,11 @@ import { BeoordelingComponent } from './project/testimonials/beoordeling/beoorde
         IteratiesBbsdeskComponent,
         InrichtingWebserverComponent,
         TestimonialsComponent,
-        BeoordelingComponent
+        BeoordelingComponent,
+        ConclusieComponent,
+        TerugkomdagenComponent,
+        VisieAfstuderenComponent,
+        BezoekStagiairesComponent
     ],
     imports: [
         BrowserModule,
